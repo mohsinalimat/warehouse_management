@@ -149,7 +149,8 @@
   {
    "fieldname": "total_weight",
    "fieldtype": "Float",
-   "label": "Total Weight"
+   "label": "Total Weight",
+   "non_negative": 1
   },
   {
    "fieldname": "vol_weight",
@@ -162,7 +163,7 @@
   }
  ],
  "links": [],
- "modified": "2021-06-14 01:02:29.152815",
+ "modified": "2021-06-14 09:05:09.363068",
  "modified_by": "Administrator",
  "module": "Warehouse Management",
  "name": "Warehouse Receipt",
