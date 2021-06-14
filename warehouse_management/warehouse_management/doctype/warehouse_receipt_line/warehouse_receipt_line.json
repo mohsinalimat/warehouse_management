@@ -1,0 +1,132 @@
+{
+ "actions": [],
+ "creation": "2021-06-13 22:32:34.841055",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "type",
+  "carrier",
+  "consignee",
+  "column_break_4",
+  "tracking_number",
+  "section_break_6",
+  "description",
+  "section_break_18",
+  "length",
+  "column_break_8",
+  "width",
+  "column_break_10",
+  "height",
+  "section_break_12",
+  "weight",
+  "photo"
+ ],
+ "fields": [
+  {
+   "columns": 1,
+   "fieldname": "consignee",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Consignee"
+  },
+  {
+   "columns": 1,
+   "fieldname": "type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Type",
+   "options": "Box\nEnvelope\nPallet"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Small Text",
+   "label": "Description"
+  },
+  {
+   "columns": 1,
+   "fieldname": "carrier",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Carrier",
+   "options": "Amazon\nUSPS\nUPS\nFedEx\nDHL\nLaserShip\nDrop Off\nPick Up"
+  },
+  {
+   "columns": 1,
+   "fieldname": "length",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "L"
+  },
+  {
+   "columns": 1,
+   "fieldname": "width",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "W"
+  },
+  {
+   "columns": 1,
+   "fieldname": "height",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "H"
+  },
+  {
+   "columns": 1,
+   "fieldname": "weight",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Weight"
+  },
+  {
+   "fieldname": "tracking_number",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Tracking Number"
+  },
+  {
+   "fieldname": "section_break_6",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_8",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_10",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_12",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_18",
+   "fieldtype": "Section Break"
+  },
+  {
+   "columns": 1,
+   "fieldname": "photo",
+   "fieldtype": "Attach",
+   "in_list_view": 1,
+   "label": "Photo"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2021-06-14 00:22:29.311766",
+ "modified_by": "Administrator",
+ "module": "Warehouse Management",
+ "name": "Warehouse Receipt Line",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}
