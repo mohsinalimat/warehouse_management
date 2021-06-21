@@ -2,7 +2,16 @@
 // For license information, please see license.txt
 
 frappe.ui.form.on('Warehouse Receipt', {
-	// refresh: function(frm) {
+	setup: function () {
+        $('.layout-side-section').hide(); // Little Trick to work better
+    }
+});
 
-	// }
+
+// Child Table
+frappe.ui.form.on('Warehouse Receipt Line', {
+    weight: function (frm) {
+        console.log('Por aca?');
+        frm.set_value('total_weight', frm.get_sum('packages_in_warehouse_receipt', 'weight'));
+    }
 });

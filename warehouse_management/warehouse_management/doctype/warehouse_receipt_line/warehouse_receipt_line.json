@@ -20,11 +20,14 @@
   "height",
   "section_break_12",
   "weight",
+  "received_by",
+  "received_date",
   "photo"
  ],
  "fields": [
   {
    "columns": 1,
+   "description": "Name on the package label.",
    "fieldname": "consignee",
    "fieldtype": "Data",
    "in_list_view": 1,
@@ -56,14 +59,16 @@
    "fieldname": "length",
    "fieldtype": "Float",
    "in_list_view": 1,
-   "label": "L"
+   "label": "L",
+   "width": "15px"
   },
   {
    "columns": 1,
    "fieldname": "width",
    "fieldtype": "Float",
    "in_list_view": 1,
-   "label": "W"
+   "label": "W",
+   "width": "25"
   },
   {
    "columns": 1,
@@ -77,9 +82,10 @@
    "fieldname": "weight",
    "fieldtype": "Float",
    "in_list_view": 1,
-   "label": "Weight"
+   "label": "Weight (lb)"
   },
   {
+   "columns": 1,
    "fieldname": "tracking_number",
    "fieldtype": "Data",
    "in_list_view": 1,
@@ -113,14 +119,28 @@
    "columns": 1,
    "fieldname": "photo",
    "fieldtype": "Attach",
-   "in_list_view": 1,
    "label": "Photo"
+  },
+  {
+   "columns": 1,
+   "fieldname": "received_by",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Received By"
+  },
+  {
+   "columns": 1,
+   "default": "now",
+   "fieldname": "received_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Received Date"
   }
  ],
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2021-06-14 00:22:29.311766",
+ "modified": "2021-06-21 12:31:51.694192",
  "modified_by": "Administrator",
  "module": "Warehouse Management",
  "name": "Warehouse Receipt Line",

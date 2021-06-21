@@ -147,15 +147,18 @@
    "label": "Totals"
   },
   {
+   "description": "Total weight in pounds.",
    "fieldname": "total_weight",
    "fieldtype": "Float",
-   "label": "Total Weight",
-   "non_negative": 1
+   "label": "Total Weight (lb)",
+   "non_negative": 1,
+   "read_only": 1
   },
   {
    "fieldname": "vol_weight",
    "fieldtype": "Float",
-   "label": "Vol. Weight"
+   "label": "Vol. Weight",
+   "read_only": 1
   },
   {
    "fieldname": "column_break_21",
@@ -163,7 +166,7 @@
   }
  ],
  "links": [],
- "modified": "2021-06-14 09:05:09.363068",
+ "modified": "2021-06-21 12:31:43.362230",
  "modified_by": "Administrator",
  "module": "Warehouse Management",
  "name": "Warehouse Receipt",

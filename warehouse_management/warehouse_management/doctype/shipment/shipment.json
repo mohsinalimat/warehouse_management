@@ -1,0 +1,82 @@
+{
+ "actions": [],
+ "autoname": "Prompt",
+ "creation": "2021-06-21 11:13:44.226471",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "transportation_type",
+  "column_break_2",
+  "status",
+  "section_break_3",
+  "departure_date",
+  "section_break_6",
+  "warehouse_receipts_in_shipment"
+ ],
+ "fields": [
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Status",
+   "options": "Open\nClosed"
+  },
+  {
+   "fieldname": "departure_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Departure Date",
+   "options": "now"
+  },
+  {
+   "fieldname": "warehouse_receipts_in_shipment",
+   "fieldtype": "Table",
+   "label": "Warehouse Receipts in Shipment",
+   "options": "Shipment Line"
+  },
+  {
+   "fieldname": "transportation_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Transportation type",
+   "options": "SEA\nAIR"
+  },
+  {
+   "fieldname": "section_break_3",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_6",
+   "fieldtype": "Section Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2021-06-21 12:02:05.237952",
+ "modified_by": "Administrator",
+ "module": "Warehouse Management",
+ "name": "Shipment",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

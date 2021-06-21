@@ -1,4 +1,4 @@
-frappe.listview_settings['Warehouse Receipt'] = {
+frappe.listview_settings['Shipment'] = {
     add_fields: ['status'],
     filters: [
         ['status', '!=', 'Closed'],
@@ -14,7 +14,4 @@ frappe.listview_settings['Warehouse Receipt'] = {
         return [__(doc.status), status_color[doc.status], 'status,=,' + doc.status];
     },
 
-    before_render() {
-        localStorage.show_sidebar = "false"
-    }
 }

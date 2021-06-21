@@ -32,7 +32,7 @@
    "type": "Link"
   }
  ],
- "modified": "2021-06-14 00:59:47.673284",
+ "modified": "2021-06-21 11:25:53.300682",
  "modified_by": "Administrator",
  "module": "Warehouse Management",
  "name": "Warehouse",
@@ -44,6 +44,12 @@
    "doc_view": "List",
    "label": "Warehouse Receipt",
    "link_to": "Warehouse Receipt",
+   "type": "DocType"
+  },
+  {
+   "doc_view": "List",
+   "label": "Shipment",
+   "link_to": "Shipment",
    "type": "DocType"
   }
  ]
