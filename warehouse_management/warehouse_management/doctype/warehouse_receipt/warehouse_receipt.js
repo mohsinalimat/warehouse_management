@@ -11,7 +11,6 @@ frappe.ui.form.on('Warehouse Receipt', {
 // Child Table
 frappe.ui.form.on('Warehouse Receipt Line', {
     weight: function (frm) {
-        console.log('Por aca?');
         frm.set_value('total_weight', frm.get_sum('packages_in_warehouse_receipt', 'weight'));
     }
 });
