@@ -74,9 +74,8 @@
   },
   {
    "fieldname": "shipper",
-   "fieldtype": "Link",
-   "label": "Shipper",
-   "options": "Shipper"
+   "fieldtype": "Data",
+   "label": "Shipper"
   },
   {
    "fieldname": "consignee",
@@ -166,7 +165,7 @@
   }
  ],
  "links": [],
- "modified": "2021-06-21 12:31:43.362230",
+ "modified": "2021-07-06 11:25:26.266691",
  "modified_by": "Administrator",
  "module": "Warehouse Management",
  "name": "Warehouse Receipt",
