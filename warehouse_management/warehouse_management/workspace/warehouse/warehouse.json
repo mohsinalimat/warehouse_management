@@ -12,27 +12,8 @@
  "is_default": 0,
  "is_standard": 1,
  "label": "Warehouse",
- "links": [
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Shipper",
-   "link_to": "Shipper",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Consignee",
-   "link_to": "Consignee",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  }
- ],
- "modified": "2021-06-21 11:25:53.300682",
+ "links": [],
+ "modified": "2021-07-13 17:24:01.780464",
  "modified_by": "Administrator",
  "module": "Warehouse Management",
  "name": "Warehouse",

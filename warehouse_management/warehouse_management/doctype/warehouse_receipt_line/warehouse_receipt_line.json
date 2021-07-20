@@ -52,7 +52,8 @@
    "fieldtype": "Select",
    "in_list_view": 1,
    "label": "Carrier",
-   "options": "Amazon\nUSPS\nUPS\nFedEx\nDHL\nLaserShip\nDrop Off\nPick Up"
+   "options": "Amazon\nUSPS\nUPS\nFedEx\nDHL\nLaserShip\nDrop Off\nPick Up",
+   "print_hide": 1
   },
   {
    "columns": 1,
@@ -140,7 +141,7 @@
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2021-06-21 12:31:51.694192",
+ "modified": "2021-07-15 17:23:58.335382",
  "modified_by": "Administrator",
  "module": "Warehouse Management",
  "name": "Warehouse Receipt Line",

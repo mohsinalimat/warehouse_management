@@ -74,15 +74,14 @@
   },
   {
    "fieldname": "shipper",
-   "fieldtype": "Data",
+   "fieldtype": "Small Text",
    "label": "Shipper"
   },
   {
    "fieldname": "consignee",
-   "fieldtype": "Link",
+   "fieldtype": "Small Text",
    "in_list_view": 1,
-   "label": "Consignee",
-   "options": "Consignee"
+   "label": "Consignee"
   },
   {
    "fieldname": "column_break_0",
@@ -165,7 +164,7 @@
   }
  ],
  "links": [],
- "modified": "2021-07-06 11:25:26.266691",
+ "modified": "2021-07-14 12:39:52.613768",
  "modified_by": "Administrator",
  "module": "Warehouse Management",
  "name": "Warehouse Receipt",

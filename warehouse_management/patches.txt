@@ -1,0 +1,1 @@
+warehouse_management.patches.v13_0.delete_shipper_and_consignee

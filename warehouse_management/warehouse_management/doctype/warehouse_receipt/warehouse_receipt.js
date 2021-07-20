@@ -1,8 +1,8 @@
-// Copyright (c) 2021, Agile Shift I/o and contributors
+// Copyright (c) 2021, Agile Shift i/o and contributors
 // For license information, please see license.txt
 
 frappe.ui.form.on('Warehouse Receipt', {
-	setup: function () {
+    setup: function () {
         $('.layout-side-section').hide(); // Little Trick to work better
     }
 });
