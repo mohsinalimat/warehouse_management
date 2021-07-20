@@ -4,6 +4,17 @@
 frappe.ui.form.on('Warehouse Receipt', {
     setup: function () {
         $('.layout-side-section').hide(); // Little Trick to work better
+    },
+
+    after_save: function (frm) {
+        // Emulating print.js inside frappe/printing/page/print/print.js
+        window.open(
+            frappe.urllib.get_full_url(
+                'printview?doctype=Warehouse%20Receipt&' +
+                'name=' + frm.doc.name +
+                '&trigger_print=1&format=Warehouse%20Receipt%20Labels&no_letterhead=1&letterhead=No%20Letterhead&settings=%7B%7D&_lang=es'
+            )
+        );
     }
 });
 
