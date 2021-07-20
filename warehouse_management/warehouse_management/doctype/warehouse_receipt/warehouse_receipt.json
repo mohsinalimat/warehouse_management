@@ -75,15 +75,21 @@
   {
    "fieldname": "shipper",
    "fieldtype": "Link",
+   "in_global_search": 1,
    "label": "Shipper",
-   "options": "Shipper"
+   "options": "Shipper",
+   "search_index": 1
   },
   {
    "fieldname": "consignee",
    "fieldtype": "Link",
+   "in_global_search": 1,
    "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
    "label": "Consignee",
-   "options": "Consignee"
+   "options": "Consignee",
+   "search_index": 1
   },
   {
    "fieldname": "column_break_0",
@@ -166,7 +172,7 @@
   }
  ],
  "links": [],
- "modified": "2021-07-20 11:14:55.838511",
+ "modified": "2021-07-20 11:40:10.576533",
  "modified_by": "Administrator",
  "module": "Warehouse Management",
  "name": "Warehouse Receipt",
