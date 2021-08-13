@@ -7,9 +7,9 @@
  "field_order": [
   "type",
   "carrier",
-  "consignee",
-  "column_break_4",
   "tracking_number",
+  "column_break_4",
+  "consignee",
   "section_break_6",
   "description",
   "section_break_18",
@@ -19,10 +19,12 @@
   "column_break_10",
   "height",
   "section_break_12",
-  "weight",
   "received_by",
+  "weight",
+  "column_break_17",
   "received_date",
-  "photo"
+  "section_break_19",
+  "wr_line_photo"
  ],
  "fields": [
   {
@@ -30,7 +32,7 @@
    "description": "Name on the package label.",
    "fieldname": "consignee",
    "fieldtype": "Data",
-   "in_list_view": 1,
+   "in_global_search": 1,
    "label": "Consignee"
   },
   {
@@ -42,8 +44,10 @@
    "options": "Box\nEnvelope\nPallet"
   },
   {
+   "columns": 2,
    "fieldname": "description",
    "fieldtype": "Small Text",
+   "in_list_view": 1,
    "label": "Description"
   },
   {
@@ -118,15 +122,8 @@
   },
   {
    "columns": 1,
-   "fieldname": "photo",
-   "fieldtype": "Attach",
-   "label": "Photo"
-  },
-  {
-   "columns": 1,
    "fieldname": "received_by",
    "fieldtype": "Data",
-   "in_list_view": 1,
    "label": "Received By"
   },
   {
@@ -134,14 +131,28 @@
    "default": "now",
    "fieldname": "received_date",
    "fieldtype": "Date",
-   "in_list_view": 1,
    "label": "Received Date"
+  },
+  {
+   "fieldname": "column_break_17",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_19",
+   "fieldtype": "Section Break"
+  },
+  {
+   "columns": 1,
+   "fieldname": "wr_line_photo",
+   "fieldtype": "Attach",
+   "in_list_view": 1,
+   "label": "Photo"
   }
  ],
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2021-07-15 17:23:58.335382",
+ "modified": "2021-08-13 14:19:39.360208",
  "modified_by": "Administrator",
  "module": "Warehouse Management",
  "name": "Warehouse Receipt Line",

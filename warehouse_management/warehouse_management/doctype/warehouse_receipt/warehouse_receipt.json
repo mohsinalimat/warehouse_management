@@ -22,9 +22,12 @@
   "packages_in_warehouse_receipt",
   "section_break_11",
   "notes",
+  "hazardous",
   "column_break_12",
   "received_by",
-  "hazardous",
+  "shipping_label_photo",
+  "photo_of_content_inside",
+  "warehouse_label_photo",
   "totals_section",
   "total_weight",
   "column_break_21",
@@ -78,6 +81,7 @@
    "in_global_search": 1,
    "label": "Shipper",
    "options": "Shipper",
+   "reqd": 1,
    "search_index": 1
   },
   {
@@ -89,6 +93,7 @@
    "in_standard_filter": 1,
    "label": "Consignee",
    "options": "Consignee",
+   "reqd": 1,
    "search_index": 1
   },
   {
@@ -107,7 +112,8 @@
   {
    "fieldname": "received_by",
    "fieldtype": "Data",
-   "label": "Received By"
+   "label": "Received By",
+   "reqd": 1
   },
   {
    "fieldname": "section_break_11",
@@ -169,10 +175,34 @@
   {
    "fieldname": "column_break_21",
    "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "shipping_label_photo",
+   "fieldtype": "Attach Image",
+   "label": "Photo of Shipping Label",
+   "no_copy": 1,
+   "print_hide": 1,
+   "report_hide": 1
+  },
+  {
+   "fieldname": "photo_of_content_inside",
+   "fieldtype": "Attach Image",
+   "label": "Photo of Content Inside",
+   "no_copy": 1,
+   "print_hide": 1,
+   "report_hide": 1
+  },
+  {
+   "fieldname": "warehouse_label_photo",
+   "fieldtype": "Attach Image",
+   "label": "Photo of Warehouse Label",
+   "no_copy": 1,
+   "print_hide": 1,
+   "report_hide": 1
   }
  ],
  "links": [],
- "modified": "2021-07-20 11:40:10.576533",
+ "modified": "2021-08-13 14:52:57.305371",
  "modified_by": "Administrator",
  "module": "Warehouse Management",
  "name": "Warehouse Receipt",
