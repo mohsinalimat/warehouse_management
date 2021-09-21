@@ -62,7 +62,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2021-06-21 18:23:57.803385",
+ "modified": "2021-09-21 15:29:45.191245",
  "modified_by": "Administrator",
  "module": "Warehouse Management",
  "name": "Shipment",
@@ -76,7 +76,8 @@
    "print": 1,
    "read": 1,
    "report": 1,
-   "role": "System Manager",
+   "role": "All",
+   "select": 1,
    "share": 1,
    "write": 1
   }
