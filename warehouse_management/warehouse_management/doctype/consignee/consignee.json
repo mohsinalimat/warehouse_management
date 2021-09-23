@@ -44,9 +44,8 @@
    "options": "Phone"
   }
  ],
- "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2021-07-20 11:13:17.340138",
+ "modified": "2021-09-23 10:32:14.879769",
  "modified_by": "Administrator",
  "module": "Warehouse Management",
  "name": "Consignee",
@@ -60,7 +59,7 @@
    "print": 1,
    "read": 1,
    "report": 1,
-   "role": "System Manager",
+   "role": "All",
    "share": 1,
    "write": 1
   }
