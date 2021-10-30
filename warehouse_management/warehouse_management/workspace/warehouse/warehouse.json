@@ -13,7 +13,7 @@
  "is_standard": 1,
  "label": "Warehouse",
  "links": [],
- "modified": "2021-09-20 17:55:06.805195",
+ "modified": "2021-10-29 18:53:47.714156",
  "modified_by": "Administrator",
  "module": "Warehouse Management",
  "name": "Warehouse",
@@ -24,6 +24,12 @@
   {
    "doc_view": "List",
    "label": "Warehouse Receipt",
+   "link_to": "Warehouse Receipt",
+   "type": "DocType"
+  },
+  {
+   "doc_view": "New",
+   "label": "Create Warehouse Receipt",
    "link_to": "Warehouse Receipt",
    "type": "DocType"
   },
