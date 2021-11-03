@@ -21,8 +21,8 @@
   "section_break_6",
   "packages_in_warehouse_receipt",
   "section_break_11",
-  "notes",
   "hazardous",
+  "notes",
   "column_break_12",
   "received_by",
   "shipping_label_photo",
@@ -69,7 +69,8 @@
    "fieldname": "packages_in_warehouse_receipt",
    "fieldtype": "Table",
    "label": "Packages in Warehouse Receipt",
-   "options": "Warehouse Receipt Line"
+   "options": "Warehouse Receipt Line",
+   "reqd": 1
   },
   {
    "fieldname": "section_break_6",
@@ -202,7 +203,7 @@
   }
  ],
  "links": [],
- "modified": "2021-09-21 15:23:19.977086",
+ "modified": "2021-11-03 15:43:05.237583",
  "modified_by": "Administrator",
  "module": "Warehouse Management",
  "name": "Warehouse Receipt",

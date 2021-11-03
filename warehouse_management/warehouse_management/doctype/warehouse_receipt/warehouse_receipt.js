@@ -7,17 +7,18 @@ frappe.ui.form.on('Warehouse Receipt', {
     },
 
     shipping_label_photo: function (frm) {
-        if (frm.doc.shipping_label_photo) {
-            // Emulating print.js inside frappe/printing/page/print/print.js
-            window.open(
-                frappe.urllib.get_full_url(
-                    'printview?doctype=Warehouse%20Receipt&' +
-                    'name=' + frm.doc.name +
-                    '&trigger_print=1&format=Warehouse%20Receipt%20Labels&no_letterhead=1&letterhead=No%20Letterhead&settings=%7B%7D&_lang=es'
-                )
-            );
+        if (frm.is_new()) {
+            frm.save().then(() => {
+                // Emulating print.js inside frappe/printing/page/print/print.js
+                window.open(
+                    frappe.urllib.get_full_url(
+                        'printview?doctype=Warehouse%20Receipt&' +
+                        'name=' + frm.doc.name +
+                        '&trigger_print=1&format=Warehouse%20Receipt%20Labels&no_letterhead=1&letterhead=No%20Letterhead&settings=%7B%7D&_lang=es'
+                    )
+                );
+            });
         }
-
     }
 
 });
