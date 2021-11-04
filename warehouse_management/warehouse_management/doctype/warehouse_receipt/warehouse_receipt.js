@@ -4,6 +4,13 @@
 frappe.ui.form.on('Warehouse Receipt', {
     setup: function () {
         $('.layout-side-section').hide(); // Little Trick to work better
+
+        // https://stackoverflow.com/a/1977126/3172310. Prevent Attach image button click if tracking comes from scanner
+        $(document).on('keydown', "input[data-fieldname='tracking_number']", (event) => {
+            if (event.key === 'Enter') {  // Enter key is sent if field is set from barcode scanner.
+                event.preventDefault(); // We prevent the button 'Attach Image' opens a pop-up.
+            }
+        });
     },
 
     shipping_label_photo: function (frm) {
@@ -20,7 +27,6 @@ frappe.ui.form.on('Warehouse Receipt', {
             });
         }
     }
-
 });
 
 
