@@ -22,5 +22,4 @@ frappe.listview_settings['Shipment'] = {
 			<span>`;
         }
     }
-
 }

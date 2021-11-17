@@ -24,9 +24,6 @@ frappe.listview_settings['Warehouse Receipt'] = {
                 data-filter="transportation_type,=,${frappe.utils.escape_html(val)}">
 				<span class="ellipsis"> ${val} </span>
 			<span>`;
-        },
-        // total_weight(val) { TODO: Improve
-        //     return parseFloat(val || 0.00)
-        // }
+        }
     }
 }

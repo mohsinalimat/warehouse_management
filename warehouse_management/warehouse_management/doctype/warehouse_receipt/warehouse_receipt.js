@@ -25,7 +25,6 @@ frappe.ui.form.on('Warehouse Receipt', {
     }
 });
 
-
 // Child Table
 frappe.ui.form.on('Warehouse Receipt Line', {
     weight: function (frm) {
